@@ -1,0 +1,38 @@
+
+.menu-container {
+    width: 200px;
+    height: calc(100% - 60px);
+    background: url('../../../assets/bacm.jfif');
+    position: fixed;
+    top: 75px;
+    left: 0;
+}
+
+.menu-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-container li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+.menu-container a { 
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-container li:hover {
+    background: rgb(178, 174, 229);
+}
+
+.menu-container li:hover a {
+    color: rgb(39, 3, 3);
+}

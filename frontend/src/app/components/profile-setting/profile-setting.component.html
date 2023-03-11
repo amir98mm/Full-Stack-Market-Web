@@ -1,0 +1,28 @@
+<div >
+
+    <form class="myprofileContainer" #mtForm="ngForm">
+            <div class="item">
+                <div >
+                    <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" class="mail" type="email" placeholder="info@example.com" id="email">
+                </div>
+            </div>
+            <div class="item">
+                <input class="info" type="password" placeholder="Password">
+            </div> 
+            <div class="item">
+                <input class="info" type="date" placeholder="Birthday">
+            </div> 
+            <div class="item">
+                <form>
+                    <select class="info" id="sex" name="sex">
+                      <option value="" disabled selected>Choose your gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </form>
+            </div> 
+    </form>
+    <br /><br /><button type="submit" class="reset">Reset Account</button>
+    <button type="submit" class="delete">Delete Account</button>
+    
+</div>

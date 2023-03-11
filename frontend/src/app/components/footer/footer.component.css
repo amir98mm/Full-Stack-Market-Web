@@ -1,0 +1,11 @@
+.footer {
+    width: 100%;
+    height: calc(100%-100vh);
+    background: url('../../../assets/head.jpg');
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+}

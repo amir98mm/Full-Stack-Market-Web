@@ -1,0 +1,10 @@
+.home {
+    width: calc(100% - 200px);
+    height: 100vh;
+    color: white;
+    background: green;
+    left: 200px;
+    position: absolute;
+    top: 60px;
+    bottom: 40px;
+}

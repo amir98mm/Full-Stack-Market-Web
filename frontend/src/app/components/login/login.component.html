@@ -1,0 +1,23 @@
+<div class="login"> 
+    <div>
+        <h1 class="title">Welcome to our Website!</h1>
+        <div>
+            <img src="assets/log.png" width="16%">
+        </div>
+    </div>
+    <div class="loginContainer"> 
+        <div >
+            <label style="color:white">don't have an account?  </label>
+            <a routerLink="/signup" style="font-size: large; color: white;">sign up</a>
+        </div>
+        <div>
+            <input class="inputbox"  [ngClass]="{'error': wrong == false}" style="margin-top:37px;" type="text" placeholder="Username" [(ngModel)]="username">
+        </div>
+        <div>
+            <input class="inputbox" [ngClass]="{'error': wrong == false}" type="password" placeholder="Password" [(ngModel)]="password">
+        </div>
+        <button id="btn_login" (click)="login()">Login</button>
+        <img class="loading" src="/assets/loading.gif" *ngIf="isLoading" style="width:100px"/>
+        <p id="wrong_info" style="color:red" *ngIf="errorMessage">{{ errorMessage }}</p><br/>
+    </div>
+</div>

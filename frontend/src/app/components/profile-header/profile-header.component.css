@@ -1,0 +1,21 @@
+.top{
+    background: #FAF9F9;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profilepicContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profilepic{
+    width: 30px;
+    border-radius: 10px;
+}

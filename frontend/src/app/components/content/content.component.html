@@ -1,0 +1,18 @@
+<div class="content">
+    <div style="float: right; margin: 20px;">
+        <a routerLink="../home">
+            <img style="width:50px" src="assets/home.png">
+        </a>
+    </div>
+    <div>
+        <img src="/assets/loading.gif" *ngIf="!products">
+    </div>
+    <div class="product-container" *ngFor="let product of products">
+            <img [src]="product.image" width="50%">
+            <div class="product-name">{{product.title}}</div>
+            <div class="product-price">{{product.price}}</div>
+            <input type="number" id="points" name="points" step="1" min="1" [(ngModel)]="quantities[product.id]">
+            <button class="add-to-cart" (click)="addProductToCart(product.id)">Add to cart</button>
+    </div>
+    <br>
+</div>

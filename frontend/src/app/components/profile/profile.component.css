@@ -1,0 +1,13 @@
+.contentContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:center
+}
+
+.contentContainer > div:first-child {
+    flex: 0.3;
+}
+
+.contentContainer > div:last-child {
+    flex: 0.7;
+}

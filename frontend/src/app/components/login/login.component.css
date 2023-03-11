@@ -1,0 +1,60 @@
+.title{
+    color: whitesmoke;
+    margin: 0px 0;
+    padding: 35px;
+    font-family:Verdana;
+}
+
+.login{
+    background-image:url('/assets/back.jpg');
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.error {
+    border: 3px solid red;
+  }
+
+label{
+    color: solid darkseagreen;
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: large;
+}
+
+.inputbox {
+    border: 2 px solid black;
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin-bottom:20px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+
+
+#btn_login {
+    border: 2 px solid black;
+    border-radius: 25px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+#btn_login:active {
+    background-color: #e30c0c;
+    box-shadow: 0 5px rgb(68, 68, 68);
+    transform: translateY(4px);
+  }
+
+#btn_login:hover {background-color: grey}
+
+#wrong_info{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}

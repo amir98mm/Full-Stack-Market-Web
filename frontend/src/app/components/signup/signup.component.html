@@ -1,0 +1,22 @@
+<h1>Sign Up</h1>
+    <form #myForm="ngForm">
+      <div>
+        <input #usernamefield="ngModel" required placeholder="Username" [(ngModel)]="username" type="username" id="username" name="username">
+        <label class="error" *ngIf="usernamefield.touched && !usernamefield.valid"><br />Username is not valid</label><br />
+      </div><br/>
+      <div>
+        <input #passwordfield="ngModel" required placeholder="password" [(ngModel)]="password" type="password" id="password" name="password">
+        <label class="error" *ngIf="passwordfield.touched && !passwordfield.valid"><br />Password is not valid</label><br />
+      </div><br/>
+      <div>
+        <input #emailfield="ngModel" [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail" type="email" id="email" name="email">
+        <label class="error" *ngIf="emailfield.touched && !emailfield.valid"><br />E-Mail is not valid</label><br />
+      </div><br />
+      <button  [disabled]="!myForm.valid" (click)="signUp()">Sign Up</button>
+      <h1 *ngIf="signed">
+        Signed up Successfully!
+        <a *ngIf="signed"style="font-size: large; color: black;" routerLink="/login">Back to login page</a>
+      </h1>
+      <h1 class="error" *ngIf="usernamefield.dirty && passwordfield.dirty && usernamefield.touched && passwordfield.touched && !passwordfield.valid  && !usernamefield.valid"><br />Invalid registrarion information</h1><br />
+      
+    </form>

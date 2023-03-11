@@ -1,0 +1,40 @@
+<div >
+    <div class="about">
+        <span>
+            <img class="pic" src="/assets/profilepic.jpg">
+        </span>
+        <div class="title">
+            <h3 >Amir Mahamid</h3>
+            <p >Umm Al Fahem</p>
+        </div>
+        
+    </div>
+    <form class="myprofileContainer">
+        <div class="item">
+            <input class="info" type="text" placeholder="First Name" [(ngModel)]="firstName" name="FirstName">
+        </div> 
+        <div class="item">
+            <input class="info" type="text" placeholder="Last Name" [(ngModel)]="lastName" name="LastName">
+        </div>
+        <div class="item">
+            <div>
+                <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]="email" name="email" class="mail" type="email" placeholder="info@example.com" id="email">
+            </div>
+        </div>
+        <div class="item">
+            <input class="info" type="text" placeholder="Phone Number" [(ngModel)]="phoneNumber" name="phone">
+        </div> 
+        <div class="item">
+            <input class="info" type="date" placeholder="Birthday" [(ngModel)]="birthday" name="birthdate">
+        </div> 
+        <div class="item">
+            <select class="info" id="gender" [(ngModel)]="gender" name="gender">
+              <option value="" disabled selected>Choose your gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+        </div> 
+    </form>
+    <br /><br /><button type="submit" (click)="udpate()" class="update">Update Profile</button> <br />
+    
+</div>
