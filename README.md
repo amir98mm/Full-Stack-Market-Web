@@ -1,7 +1,15 @@
 # myMarketWeb
-A website that includes registration, updating profile, showing products and adding to your cart etc..
+This project is a web application that allows users to register, update their profile information, look at products and add them to their cart. The backend is implemented using Java Spring Boot and MySQL as the database, while the frontend is implemented using Angular.
 
-examples =>
+## Features
+- User registration
+- User login/logout
+- User profile management (update profile information)
+- Product details page (description, price, images)
+- Cart functionality (add/remove items, update quantities)
+
+
+## examples =>
 
 ![image](https://user-images.githubusercontent.com/75622732/224502718-5993db71-1a30-4869-adaa-ef3a3f3e2eec.png)
 
@@ -17,5 +25,3 @@ examples =>
 
 ![image](https://user-images.githubusercontent.com/75622732/224503530-47b219a3-9191-48d8-8dbd-4e6a76e47c58.png)
 
-
-DB : ![image](https://user-images.githubusercontent.com/75622732/224503368-218aa15e-660f-4710-9775-3012f3886d22.png)
